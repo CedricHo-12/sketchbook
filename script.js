@@ -52,11 +52,21 @@ gridBox.forEach( (gridBox) => {
         }else if(color == 'eraser'){
             gridBox.style.backgroundColor = 'white';
         }else if(color == 'rainbow'){
-            gridBox.style.backgroundColor = 'pink';
+            gridBox.style.backgroundColor = getRandomColor();
+            
         }
     })
 });
 }
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 
 
 const blackButton = document.getElementById('black');
@@ -78,5 +88,8 @@ reset.addEventListener('click', () => {
         box.style.backgroundColor = 'white';
     })
 })
+
+
+
 
 
