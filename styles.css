@@ -11,6 +11,8 @@ body{
     padding-bottom: 10px;
 }
 
+/** body **/
+
 #container{
     display: grid;
     border: 1px solid black;
@@ -44,4 +46,6 @@ button{
     height: 40px;
     width: 70px;
 }
+
+/** mouseover **/
 
